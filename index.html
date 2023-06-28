@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://img.icons8.com/?size=512&id=114954&format=png" type="image/x-icon">
+    <link rel="stylesheet" href="./style.css">
+    <title>Chat app - Duyên</title>
+</head>
+<body>
+    <div class="person-selector">
+        <button class="button person-selector-button active-person" id="person1-selector">Person1</button>
+        <button class="button person-selector-button " id="person2-selector">Person2</button>
+    </div>
+
+    <div class="chat-container">
+        <h2 class="chat-header">Person1 chatting ...</h2>
+
+        <div class="chat-messages">
+            <div class="message blue-bg">
+                <div class="message-sender">Person1</div>
+                <div class="message-text">Hello, i am person1. Nice too meet you</div>
+                <div class="message-timestamp">8:00</div>
+            </div>
+
+            <div class="message teal-bg">
+                <div class="message-sender">Person2</div>
+                <div class="message-text">Hi. Nice too meet you to. How old are you?</div>
+                <div class="message-timestamp">8:03</div>
+            </div>
+        </div>
+
+        <form class="chat-input-form">
+            <input type="text" class="chat-input" required placeholder="Type here, Person1...">
+            <button type="submit" class="button send-button">Send</button>
+        </form>
+        
+        <button class="button clear-chat-button">Clear chat</button>
+    </div>
+
+    <script src="./chat-app.js"></script>
+</body>
+</html>
